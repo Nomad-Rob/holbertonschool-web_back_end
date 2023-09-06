@@ -16,3 +16,5 @@ export default class Building {
     this._sqft = newSqft;
   }
 }
+
+// need to rewrite this one
