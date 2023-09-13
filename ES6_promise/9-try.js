@@ -3,9 +3,14 @@ export default function guardrail(mathFunction) {
   try {
     queue.push(mathFunction());
   } catch (e) {
-    queue.push('Error:'.concat(e.message));
+    queue.push(`Error: ${e.message}`);
   } finally {
     queue.push('Guardrail was processed');
   }
   return queue;
+}
+
+function sampleMathFunction() {
+  const result = 10 / 0;
+  return result;
 }
