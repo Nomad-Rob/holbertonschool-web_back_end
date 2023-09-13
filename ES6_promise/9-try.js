@@ -9,8 +9,3 @@ export default function guardrail(mathFunction) {
   }
   return queue;
 }
-
-function sampleMathFunction() {
-  const result = 10 / 0;
-  return result;
-}
